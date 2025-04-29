@@ -4,17 +4,12 @@ A minimal repro of ChatGPT based on https://github.com/karpathy/nanoGPT.
 
 This repo demonstrates how to build, train, and sample from a small transformer-based language model with multi-block attention.
 
----
-
 ## Features
 
 - Token & positional embeddings
 - Multihead transformer blocks
 - Simple feed-forward residual blocks with normalization
 - Multinomial sampling
-
----
-
 
 ## Requirements
 
@@ -38,8 +33,6 @@ pip install torch
 | `n_iters`       | 15000   | Total training iterations                     |
 | `learning_rate` | 1e-3    | Adam optimizer learning rate                  |
 | `log_interval`  | 100     | Steps between training logs and sample outputs|
-
----
 
 ## TODOs
 - [ ] Replace char-level tokenization with `tiktoken` / `sentencepiece`
